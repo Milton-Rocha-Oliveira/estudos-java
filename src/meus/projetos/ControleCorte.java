@@ -7,13 +7,13 @@ public class ControleCorte {
     static void dalton(int corte, int pacotes, int pecas, double preco) {
         int totalPecas = pacotes * pecas;
         double valorTotal = totalPecas * preco;
-        System.out.println("O corte de numero " + corte + " do Dalton, tem " + totalPecas + " ,e o valor total do corte é de : R$" + valorTotal%.2f);
+        System.out.println("O corte de numero " + corte + " do Dalton, tem " + totalPecas + " ,e o valor total do corte é de : R$" + valorTotal);
     }
     //Registra e retorna o valor do fornecedor
     static void damin(int corte, int pacotes, int pecas, double preco) {
         int totalPecas = pacotes * pecas;
         double valorTotal = totalPecas * preco;
-        System.out.println("O corte de numero " + corte + " do Damin, tem " + totalPecas + " ,e o valor total do corte é de : R$" + valorTotal%.2f);
+        System.out.println("O corte de numero " + corte + " do Damin, tem " + totalPecas + " ,e o valor total do corte é de : R$" + valorTotal);
     }
 
     public static void main(String[] args) {
