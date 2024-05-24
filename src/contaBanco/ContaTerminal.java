@@ -5,7 +5,7 @@ public class ContaTerminal {
     int numeroConta = 0;
     String agencia = "";
     String nomeCliente = " ";
-    double saldo = 237.48;
+    double saldo = 0.0;
 
 
     public void conta(int conta) {
@@ -22,5 +22,8 @@ public class ContaTerminal {
         nomeCliente = cLiente;
         return;
     }
-
+    public void deposito(double deposito){
+        saldo = deposito;
+        return;
+    }
 }
