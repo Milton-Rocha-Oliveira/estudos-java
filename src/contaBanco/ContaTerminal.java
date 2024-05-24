@@ -8,7 +8,7 @@ public class ContaTerminal {
     double saldo = 0.0;
 
 
-    public void conta(int conta) {
+    public void conta(int conta){
         numeroConta = conta;
         return;
     }
@@ -23,7 +23,17 @@ public class ContaTerminal {
         return;
     }
     public void deposito(double deposito){
-        saldo = deposito;
+        saldo = saldo + deposito;
         return;
+    }
+    public void saque(double valor){
+        double saque = saldo - valor;
+        if(saque < 0.0){
+            System.out.println("Saldo insuficiente:");
+        }else{
+            System.out.println("Seu dinheiro será entregue :");
+            saldo = saque;
+            System.out.println("Seu saldo após o saque é de " + saldo);
+        }
     }
 }
