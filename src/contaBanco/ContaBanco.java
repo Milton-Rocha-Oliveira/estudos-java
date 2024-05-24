@@ -7,27 +7,27 @@ public class ContaBanco {
 
          var novaConta = new ContaTerminal();
 
-          Scanner sc = new Scanner(System.in);
+         Scanner sc = new Scanner(System.in);
 
           System.out.print("Numero da conta : ");
           int conta = sc.nextInt();
 
-             sc.nextLine();
-             System.out.print("Agencia : ");
-             String agencia = sc.nextLine();
+          sc.nextLine();
+          System.out.print("Agencia : ");
+          String agencia = sc.nextLine();
 
-             System.out.print("Nome : ");
-             String nome = sc.nextLine();
+          System.out.print("Nome : ");
+          String nome = sc.nextLine();
 
-         System.out.print("Deposito : ");
-         double deposito = sc.nextDouble();
+          System.out.print("Deposito : ");
+          double deposito = sc.nextDouble();
 
-              novaConta.conta(conta);
-              novaConta.agencia(agencia);
-              novaConta.cliente(nome);
-              novaConta.deposito(deposito);
+            novaConta.conta(conta);
+            novaConta.agencia(agencia);
+            novaConta.cliente(nome);
+            novaConta.deposito(deposito);
 
-             System.out.println("Olá " + nome + " , obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + conta + " e seu saldo de R$" + novaConta.saldo + " já está disponível para saque");
+          System.out.println("Olá " + nome + " , obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + conta + " e seu saldo de R$" + novaConta.saldo + " já está disponível para saque");
 
      }
 }
