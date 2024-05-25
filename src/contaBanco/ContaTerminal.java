@@ -1,5 +1,7 @@
 package contaBanco;
 
+import java.sql.SQLOutput;
+
 public class ContaTerminal {
 
     int numeroConta = 0;
@@ -24,16 +26,18 @@ public class ContaTerminal {
     }
     public void deposito(double deposito){
         saldo = saldo + deposito;
+        System.out.println("SEU SALDO É DE R$" + saldo);
         return;
     }
     public void saque(double valor){
         double saque = saldo - valor;
-        if(saque < 0.0){
-            System.out.println("Saldo insuficiente:");
-        }else{
-            System.out.println("Seu dinheiro será entregue :");
+        if(saque < 0.0) {
+            System.out.println("SALDO INSUFICIENTE:");
+            System.out.println("SEU SALDO É DE R$" + saldo);
+        } else {
+            System.out.println("SEU DINHEIRO SERÁ ENTREGUE...");
             saldo = saque;
-            System.out.println("Seu saldo após o saque é de " + saldo);
+            System.out.println("SEU SALDO APÓS O SAQUE É DE R$" + saldo);
         }
     }
 }
