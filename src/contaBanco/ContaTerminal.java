@@ -1,7 +1,5 @@
 package contaBanco;
 
-import java.sql.SQLOutput;
-
 public class ContaTerminal {
 
     int numeroConta = 0;
