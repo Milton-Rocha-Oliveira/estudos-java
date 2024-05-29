@@ -11,6 +11,7 @@ public class CandidatosVaga {
             entrandoEmContato(candidato);
         }
     }
+    //ENTRA EM CONTATO COM OS CANDIDATOS QUE ESTÃO DENTRO DA MEDIA SALRIAL QUE A EMPRESA DESEJA
         static void entrandoEmContato(String candidato){
             int  tentativasRealizadas = 1;
             boolean continuarTentando = true;
@@ -30,11 +31,11 @@ public class CandidatosVaga {
                 System.out.println("NÃO CONSEGUIMOS CONTATO COM " + candidato + " NO NUMERO MAXIMO E TENTATIVAS");
             }
         }
-        //metodo auxiliar
+        //METODO AUXILIAR, PARA CRIAR UMA RANDOMIZAÇÃO DE LIGAÇÕES PARA UM TESTE
         static boolean atender(){
             return new Random().nextInt(3)==1;
         }
-
+    //IMPRIME NA TELA OS CANDIDATOS SELECIONADOS POR NOSSO SISTEMA QUE SE BASEI NA INTEÇÃO SALARIAL DO CANDIDATO
     static void imprimirSelecionados(){
         String [] candidatos = {"Milton", "Juliete", "Eduardo","Otavio","Aparecida"};
         System.out.println("Imprimindo lista de candidatos selecionados, informando o indice do elemento.");
@@ -47,6 +48,7 @@ public class CandidatosVaga {
                 System.out.println("O candidato selecionado foi " + candidato);
             }
     }
+    //FAZ UMA APURAÇÃO ENTRE OS CANDIDATOS, E OS SELECIONA LEVANDO EM CONSIDEÇÃO AS SUAS PRETEÇÕES SALARIAIS
     static void selecaoCandidatos(){
         String [] candidatos = {"Milton", "Juliete", "Eduardo","Otavio","Aparecida","Manoel","Maria"};
 
@@ -66,9 +68,11 @@ public class CandidatosVaga {
 
             }
         }
+        //METODO AUXILIAR PARA CRIAR VALORES DE RETENÇÕES SALARIAS FICTICIAS PARA OS CANDIDATOS
     static double valorPretendido(){
         return ThreadLocalRandom.current().nextDouble(1800,2200);
     }
+    //ANALIZA SE OS CANDIDATOS ESTÃO DENTRO DA FAIXA SALARIAL QUE A EMPRESSA DESEJA PAGAR
     static void analizarCandidato(Double salarioPretendido){
         double salarioBase = 2000.0;
         if(salarioBase > salarioPretendido){
