@@ -14,6 +14,7 @@ public class CandidatosVaga {
             entrandoEmContato(candidato);
         }
     }
+
     //FAZ UMA APURAÇÃO ENTRE OS CANDIDATOS, E OS SELECIONA LEVANDO EM CONSIDERAÇÃO AS SUAS PRETEÇÕES SALARIAIS
     static void selecaoCandidatos(){
         String [] candidatos = {"Milton", "Juliete", "Eduardo","Otavio","Aparecida","Manoel","Maria"};
