@@ -10,7 +10,7 @@ public class Contador {
             System.out.println("Digite o segundo parâmetro");
             int parametroDois = sc.nextInt();
 
-            contar(parametroUm,parametroDois);
+            validar(parametroUm,parametroDois);
 
         }
         static void contar(int parametroUm, int parametroDois ) throws ParametrosInvalidosException{
@@ -20,6 +20,11 @@ public class Contador {
                     System.out.println("Imprimindo numero " + i);
                     parametroUm++;
                 }
+            }
+        }
+        static void validar(int parametro1,int parametro2) throws ParametrosInvalidosException {
+            if(parametro1 < parametro2){
+                contar(parametro1,parametro2);
             }else{
                 System.out.println("O segundo parâmetro deve ser maior que o primeiro");
             }
