@@ -4,7 +4,7 @@ public class FormatarCEP {
 
     public static void main(String[] arg){
         try {
-            String cepFormatado = formatarCep("15854190");
+            String cepFormatado = formatarCep("1584190");
             System.out.println(cepFormatado);
         }catch (CepInvalidoException e){
             System.out.println("O CEP não coresponde com as regras de negocio.");
